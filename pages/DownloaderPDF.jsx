@@ -16,7 +16,7 @@ const InvoicePDF = dynamic(() => import("../components/pdf"), {
 function UuidController() {
 
 
-  const { userImage, setUserImage } = useUser()
+  const { userImage, setUserImage, dataUrl, setDataUrl } = useUser()
 
   const router = useRouter()
   const [mode, setMode] = useState({})
@@ -24,7 +24,9 @@ function UuidController() {
 
 
   useEffect(() => {
-    getImageData(router.query.uid, setUserImage)
+    getImageData(`/users/${router.query.uid}/image`, setUserImage)
+    getImageData(`/users/${router.query.uid}/dataUrl`, setDataUrl)
+
   }, [router.query]);
 
   console.log(userImage)
@@ -42,7 +44,7 @@ function UuidController() {
 
             <br />
 
-            <InvoicePDF img={userImage} dbUrl={router.query.dataUrl && router.query.dataUrl.replaceAll(' ', '+')} />
+            <InvoicePDF img={userImage} dbUrl={dataUrl} />
 
           </div>
           : <div style={{ color: 'white' }}>

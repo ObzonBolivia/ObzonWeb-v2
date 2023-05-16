@@ -113,9 +113,9 @@ const PDFView = ({ img, dbUrl, style }) => {
 
         if (isWebview()) {
 
-            writeUserData(`/`, { [user.uid]: image }, null)
+            writeUserData(`/users/${user.uid}`, { image, dataUrl }, null)
 
-            router.pathname !== '/DownloaderPDF' && window.open(`https://collage-two.vercel.app/DownloaderPDF?dataUrl=${dataUrl}&uid=${user.uid}`, '_system')
+            router.pathname !== '/DownloaderPDF' && window.open(`https://collage-two.vercel.app/DownloaderPDF?uid=${user.uid}`, '_system')
 
 
 
