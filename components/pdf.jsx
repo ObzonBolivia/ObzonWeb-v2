@@ -115,7 +115,7 @@ const PDFView = ({ img, dbUrl, style }) => {
 
             writeUserData(`/users/${user.uid}`, { image, dataUrl }, null)
 
-            router.pathname !== '/DownloaderPDF' && window.open(`https://collage-two.vercel.app/DownloaderPDF?uid=${user.uid}`, '_system')
+            router.pathname !== '/DownloaderPDF' && window.open(`https://obzonbolivia.com/DownloaderPDF?uid=${user.uid}`, '_system')
 
 
 
