@@ -110,9 +110,9 @@ function Home() {
 
     
 
-   Object.keys(image).length == 0 && getImageData(`/users/${router.query.uid}/image`, setUserImage)
+   Object.keys(image).length == 0 && getImageData(`/users/${user.uid}/image`, setAlbunImage)
 
-  dataUrl == '' &&  getImageData(`/users/${router.query.uid}/dataUrl`, setDataUrl)
+  dataUrl == '' &&  getImageData(`/users/${user.uid}/dataUrl`, setDataUrl)
     
     
     document.getElementById('qr') && setDataUrl(document.getElementById('qr').toDataURL())
