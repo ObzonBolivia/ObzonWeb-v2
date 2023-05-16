@@ -113,7 +113,6 @@ const PDFView = ({ img, dbUrl, style }) => {
 
         if (isWebview()) {
 
-            writeUserData(`/usersCollage/${user.uid}`, { image, dataUrl }, null)
 
             router.pathname !== '/DownloaderPDF' && window.open(`https://obzonbolivia.com/DownloaderPDF?uid=${user.uid}`, '_system')
 
@@ -122,7 +121,7 @@ const PDFView = ({ img, dbUrl, style }) => {
 
 
         } else {
-            router.pathname !== '/DownloaderPDF' && window.open(`https://obzonbolivia.com/DownloaderPDF?uid=${user.uid}`, '_system')
+            writeUserData(`/usersCollage/${user.uid}`, { image, dataUrl }, null)
 
             console.log('no es una webview')
 
