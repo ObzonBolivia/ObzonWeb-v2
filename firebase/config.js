@@ -1,9 +1,9 @@
 export const firebaseConfig = {
-  apiKey: "AIzaSyBzHz0uVgroKFRNLjPTAvpNh-iD21xfFBM",
-  authDomain: "obzon-7a307.firebaseapp.com",
-  databaseURL: "https://obzon-7a307-default-rtdb.firebaseio.com",
-  projectId: "obzon-7a307",
-  storageBucket: "obzon-7a307.appspot.com",
-  messagingSenderId: "692140772714",
-  appId: "1:692140772714:web:11bf67c5f8ed7767b6e913"
+  apiKey: "AIzaSyAvAE932To1LPwo3nDu3CvVy-F_DtTnZeg",
+  authDomain: "obzonbolivia-177c2.firebaseapp.com",
+  databaseURL: "https://obzonbolivia-177c2-default-rtdb.firebaseio.com",
+  projectId: "obzonbolivia-177c2",
+  storageBucket: "obzonbolivia-177c2.appspot.com",
+  messagingSenderId: "741501185799",
+  appId: "1:741501185799:web:c7f44b918d0ad3bd07dfa2"
 };
