@@ -108,8 +108,13 @@ function Home() {
 
   useEffect(() => {
 
-    Object.keys(image).length == 0 && getImageData(user.uid, setAlbunImage)
+    
 
+   Object.keys(image).length == 0 && getImageData(`/users/${router.query.uid}/image`, setUserImage)
+
+  dataUrl == '' &&  getImageData(`/users/${router.query.uid}/dataUrl`, setDataUrl)
+    
+    
     document.getElementById('qr') && setDataUrl(document.getElementById('qr').toDataURL())
   }, [user, qr]);
 
