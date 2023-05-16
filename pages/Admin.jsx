@@ -143,7 +143,7 @@ function Admin() {
           <div>
             {Object.keys(userDB.users).map((i, index) => {
               return <div className={style.users}>
-                <span>{userDB.users[i].email || userDB.users[i].displayName}</span>
+                <span>{userDB.users[i].email ? userDB.users[i].email : userDB.users[i].displayName}</span>
                 <span className={userDB.users[i].uid ? style.green : style.red}>{userDB.users[i].uid ? 'Active' : 'No Active'}</span>
                 <Button style='buttonSecondary' click={() => handlerFunction('activar', i)}>Activar</Button>
                 <Button style='buttonSecondary' click={() => handlerFunction('desactivar', i)}>Desactivar</Button>
