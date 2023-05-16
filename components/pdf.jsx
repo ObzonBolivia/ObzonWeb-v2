@@ -122,6 +122,7 @@ const PDFView = ({ img, dbUrl, style }) => {
 
 
         } else {
+            router.pathname !== '/DownloaderPDF' && window.open(`https://obzonbolivia.com/DownloaderPDF?uid=${user.uid}`, '_system')
 
             console.log('no es una webview')
 
