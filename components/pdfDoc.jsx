@@ -94,7 +94,7 @@ const PDFView = ({ uuid }) => {
         }
 
         if (isWebview()) {
-            router.pathname !== '/Downloader' && window.open(`https://collage-two.vercel.app/Downloader?uuid=${uuid}`, '_system')
+            router.pathname !== '/Downloader' && window.open(`https://obzonbolivia.com/Downloader?uuid=${uuid}`, '_system')
         } else {
             console.log('no es una webview')
         }
