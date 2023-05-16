@@ -24,8 +24,8 @@ function UuidController() {
 
 
   useEffect(() => {
-    getImageData(`/users/${router.query.uid}/image`, setUserImage)
-    getImageData(`/users/${router.query.uid}/dataUrl`, setDataUrl)
+    getImageData(`/usersCollage/${router.query.uid}/image`, setUserImage)
+    getImageData(`/usersCollage/${router.query.uid}/dataUrl`, setDataUrl)
 
   }, [router.query]);
 
