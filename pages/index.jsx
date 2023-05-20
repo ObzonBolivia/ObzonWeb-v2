@@ -23,7 +23,7 @@ import Modal from '../components/Modal'
 
 import Button from '../components/Button'
 
-import QRCode from "qrcode.react";
+import QRCode from "qrcode.react"; 
 
 import Link from 'next/link'
 
