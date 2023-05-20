@@ -221,7 +221,7 @@ export default function Figure({ stylesProp, num, rotate, index }) {
 
                 image[`Image-${index}`] && image[`Image-${index}`].url && <div className={style.radioInputs}>
 
-                    <span onClick={(e) => handlerEventOnClick(e, `Image-${index}`, 'right)}></span>
+                    <span onClick={(e) => handlerEventOnClick(e, `Image-${index}`, 'right')}></span>
 
                     <span onClick={(e) => handlerEventOnClick(e, `Image-${index}`, 'bottom')}></span>
 
