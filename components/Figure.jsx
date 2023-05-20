@@ -1,3 +1,7 @@
+import { useUser } from '../context/Context'
+
+import { useState, useRef, useEffect } from 'react'
+
 import style from '../styles/Figure.module.css'
 
 export default function Figure({ stylesProp, num, rotate, index }) {
