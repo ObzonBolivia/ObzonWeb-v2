@@ -41,6 +41,7 @@ export default function Figure({ stylesProp, num, rotate, index }) {
         console.log(e.target.value)
 
     }
+        
 
     function handleDragStart(e, index) {
 
