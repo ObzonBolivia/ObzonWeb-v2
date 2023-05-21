@@ -86,7 +86,7 @@ function UuidController() {
               <br /> */}
             
 
-            <InvoicePDF uuid={uuid}  />
+            <InvoicePDF uuid={uuid}  click={añadir}/>
               <br />
               <br />
 
