@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     }
 })
 
-const PDFView = ({ uuid }) => {
+const PDFView = ({ uuid, click }) => {
     // const { image, setAlbunImage, templates, numeration, qr, dataUrl, uuid } = useUser()
 
     const [isCliente, setisCliente] = useState(false);
@@ -78,9 +78,11 @@ const PDFView = ({ uuid }) => {
         // console.log(uuid)
 
         // router.pathname !== '/Downloader' && window.open(`https://collage-two.vercel.app/Downloader?uuid=${uuid}`, '_system')
-
+        
+        click()
 
         const isWebview = () => {
+          
             if (typeof window === undefined) { return false };
 
             let navigator = window.navigator;
@@ -94,8 +96,10 @@ const PDFView = ({ uuid }) => {
         }
 
         if (isWebview()) {
+
             router.pathname !== '/Downloader' && window.open(`https://obzonbolivia.com/Downloader?uuid=${uuid}`, '_system')
         } else {
+            
             console.log('no es una webview')
         }
 
