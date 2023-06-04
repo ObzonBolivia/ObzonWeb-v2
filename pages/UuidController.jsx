@@ -27,7 +27,7 @@ function UuidController() {
   function generate() {
     let uuidGenerates = []
     for (let i = 0; i < 16; i++) {
-      const newUuid = generateUUID()
+      const newUuid = generateUUID(userDB.activadores)
       uuidGenerates.push(newUuid)
     }
     setUuid([...uuidGenerates])
